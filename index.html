@@ -1,197 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BusinessCheck SA</title>
+    <title>BusinessCheck SA</title>
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI, sans-serif;
-}
-
-body{
-    background:#0f172a;
-    color:white;
-}
-
-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 80px;
-    background:#111827;
-    border-bottom:1px solid rgba(255,255,255,0.1);
-}
-
-.logo{
-    font-size:32px;
-    font-weight:bold;
-}
-
-.logo span{
-    color:#fbbf24;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    font-weight:500;
-}
-
-.hero{
-    padding:100px 80px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:60px;
-}
-
-.hero-text{
-    max-width:700px;
-}
-
-.hero h1{
-    font-size:72px;
-    line-height:1.1;
-    margin-bottom:25px;
-}
-
-.hero p{
-    font-size:22px;
-    color:#cbd5e1;
-    margin-bottom:40px;
-}
-
-.btn{
-    padding:16px 35px;
-    border:none;
-    border-radius:10px;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-.btn-primary{
-    background:#fbbf24;
-    color:#000;
-}
-
-.btn-secondary{
-    background:#1e293b;
-    color:white;
-    border:1px solid #334155;
-    margin-left:15px;
-}
-
-.feature-card{
-    background:#1e293b;
-    padding:35px;
-    border-radius:20px;
-    width:380px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.4);
-}
-
-.feature-card h2{
-    color:#fbbf24;
-    margin-bottom:20px;
-}
-
-.feature-card p{
-    color:#cbd5e1;
-}
-
-.search-section{
-    padding:0 80px 80px;
-}
-
-.search-box{
-    display:flex;
-    gap:10px;
-}
-
-.search-box input{
-    flex:1;
-    padding:18px;
-    border:none;
-    border-radius:10px;
-    background:#1e293b;
-    color:white;
-    font-size:16px;
-}
-
-.search-box button{
-    background:#fbbf24;
-    color:black;
-    border:none;
-    padding:18px 30px;
-    border-radius:10px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:40px;
-    font-size:42px;
-}
-
-.businesses{
-    padding:80px;
-}
-
-#results{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
-}
-
-.business-card{
-    background:#1e293b;
-    border-radius:15px;
-    padding:25px;
-    transition:0.3s;
-}
-
-.business-card:hover{
-    transform:translateY(-5px);
-}
-
-.business-card h3{
-    color:#fbbf24;
-    margin-bottom:10px;
-}
-
-.business-card p{
-    color:#cbd5e1;
-    margin-bottom:8px;
-}
-
-.business-card a{
-    color:#fbbf24;
-    text-decoration:none;
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#111827;
-    color:#94a3b8;
-}
-
-</style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 <header>
-    <div class="logo">Business<span>Check</span> SA</div>
+    <div class="logo">
+        Business<span>Check</span> SA
+    </div>
 
     <nav>
         <a href="#">Home</a>
@@ -205,50 +29,47 @@ footer{
 <section class="hero">
 
     <div class="hero-text">
-        <h1>Know Who You're Doing Business With</h1>
+
+        <h1>
+            Know Who You're Doing Business With
+        </h1>
 
         <p>
-            Search, verify and review South African businesses.
-            Make informed decisions before spending your money.
+            Search, verify and review South African businesses before spending your money.
         </p>
 
         <button class="btn btn-primary">
             Explore Businesses
         </button>
 
-        <button class="btn btn-secondary">
-            Write Review
-        </button>
     </div>
 
     <div class="feature-card">
+
         <h2>Featured Business</h2>
 
-        <h3>Capitec Bank</h3>
+        <h3>BusinessCheck SA</h3>
 
         <p>
-            One of South Africa's leading digital banks with
-            millions of customers nationwide.
+            South Africa's business review and verification platform.
         </p>
 
-        <br>
-
-        <h3>★★★★☆ 4.8/5</h3>
     </div>
 
 </section>
 
 <section class="search-section">
 
-    <div class="search-box">
+    <div class="search-container">
+
         <input
             type="text"
+            id="searchInput"
             placeholder="Search businesses..."
-        >
+            onkeyup="searchBusinesses()">
 
-        <button onclick="loadBusinesses()">
-            Search
-        </button>
+        <div id="searchResults"></div>
+
     </div>
 
 </section>
@@ -267,6 +88,7 @@ footer{
     © 2026 BusinessCheck SA. All Rights Reserved.
 </footer>
 
+<<<<<<< HEAD
 <script>
 
 window.onload = loadBusinesses;
@@ -309,6 +131,9 @@ async function loadBusinesses() {
 }
 
 </script>
+=======
+<script src="js/app.js"></script>
+>>>>>>> cf9ea65 (Added separate CSS and JS files)
 
 </body>
 </html>
