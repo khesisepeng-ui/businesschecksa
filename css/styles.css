@@ -7,14 +7,14 @@
 }
 
 body{
-    background:#f5f7fb;
+    background:#f8fafc;
     color:#1e293b;
 }
 
 /* HEADER */
 
 header{
-    background:#ffffff;
+    background:white;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -28,16 +28,16 @@ header{
 .logo{
     font-size:42px;
     font-weight:800;
-    color:#2f56d4;
+    color:#1E40AF;
 }
 
 .logo span{
-    color:#ff7a18;
+    color:#14B8A6;
 }
 
 nav{
     display:flex;
-    gap:40px;
+    gap:35px;
 }
 
 nav a{
@@ -48,7 +48,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#2f56d4;
+    color:#6366F1;
 }
 
 /* HERO */
@@ -56,8 +56,8 @@ nav a:hover{
 .hero{
     background:linear-gradient(
         135deg,
-        #2f56d4 0%,
-        #4a7cff 100%
+        #1E40AF 0%,
+        #6366F1 100%
     );
 
     color:white;
@@ -66,7 +66,7 @@ nav a:hover{
     justify-content:space-between;
     align-items:center;
 
-    gap:80px;
+    gap:70px;
 
     padding:100px 80px;
 }
@@ -83,18 +83,20 @@ nav a:hover{
 
 .hero p{
     font-size:24px;
-    line-height:1.6;
-    margin-bottom:40px;
+    line-height:1.7;
     opacity:.95;
+    margin-bottom:40px;
 }
 
+/* BUTTONS */
+
 .btn{
+    padding:18px 35px;
     border:none;
     border-radius:12px;
-    padding:18px 35px;
+    cursor:pointer;
     font-size:18px;
     font-weight:700;
-    cursor:pointer;
     transition:.3s;
 }
 
@@ -103,13 +105,13 @@ nav a:hover{
 }
 
 .btn-primary{
-    background:#ff7a18;
+    background:#F97316;
     color:white;
 }
 
 .btn-secondary{
     background:white;
-    color:#2f56d4;
+    color:#1E40AF;
     margin-left:15px;
 }
 
@@ -121,18 +123,17 @@ nav a:hover{
 
     width:420px;
 
-    border-radius:20px;
+    border-radius:24px;
 
     padding:40px;
 
     box-shadow:
-    0 10px 40px rgba(0,0,0,.15);
+    0 20px 50px rgba(0,0,0,.15);
 }
 
 .feature-card h2{
-    color:#2f56d4;
-    margin-bottom:25px;
-    font-size:34px;
+    color:#6366F1;
+    margin-bottom:20px;
 }
 
 .feature-card h3{
@@ -140,14 +141,14 @@ nav a:hover{
 }
 
 .feature-card p{
-    color:#475569;
+    color:#64748b;
     line-height:1.7;
 }
 
 /* SEARCH */
 
 .search-section{
-    padding:70px 80px 20px;
+    padding:60px 80px;
 }
 
 .search-container{
@@ -158,7 +159,9 @@ nav a:hover{
 
 #searchInput{
     width:100%;
+
     padding:22px;
+
     font-size:18px;
 
     border-radius:15px;
@@ -166,13 +169,14 @@ nav a:hover{
     border:2px solid #dbe2ea;
 
     background:white;
+
     color:#1e293b;
 
     outline:none;
 }
 
 #searchInput:focus{
-    border-color:#2f56d4;
+    border-color:#6366F1;
 }
 
 #searchInput::placeholder{
@@ -194,10 +198,10 @@ nav a:hover{
 
     display:none;
 
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.1);
-
     z-index:999;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.1);
 }
 
 .search-item{
@@ -210,11 +214,7 @@ nav a:hover{
     background:#f8fafc;
 }
 
-/* BUSINESS SECTION */
-
-.businesses{
-    padding:80px;
-}
+/* SECTION TITLE */
 
 .section-title{
     text-align:center;
@@ -223,8 +223,15 @@ nav a:hover{
     color:#1e293b;
 }
 
+/* BUSINESS LIST */
+
+.businesses{
+    padding:80px;
+}
+
 #results{
     display:grid;
+
     grid-template-columns:
     repeat(auto-fit,minmax(320px,1fr));
 
@@ -239,7 +246,7 @@ nav a:hover{
     padding:30px;
 
     box-shadow:
-    0 8px 30px rgba(0,0,0,.08);
+    0 10px 30px rgba(0,0,0,.08);
 
     transition:.3s;
 }
@@ -249,13 +256,13 @@ nav a:hover{
 }
 
 .business-card h3{
-    color:#2f56d4;
+    color:#1E40AF;
     margin-bottom:20px;
     font-size:28px;
 }
 
 .business-card p{
-    color:#475569;
+    color:#64748b;
     margin-bottom:12px;
     line-height:1.6;
 }
@@ -265,8 +272,8 @@ nav a:hover{
 }
 
 .business-card a{
+    color:#F97316;
     text-decoration:none;
-    color:#ff7a18;
     font-weight:700;
 }
 
@@ -320,7 +327,7 @@ footer{
     }
 
     .search-section{
-        padding:40px 20px;
+        padding:30px 20px;
     }
 
     .businesses{
@@ -331,4 +338,3 @@ footer{
         font-size:42px;
     }
 }
-
