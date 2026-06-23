@@ -1,4 +1,3 @@
-git status 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +14,11 @@ git status
 <header>
 
     <div class="logo">
-    Business<span>Check</span> SA
-</div>
+        Business<span>Check</span> SA
+    </div>
 
     <nav>
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="businesses.html">Businesses</a>
         <a href="#">Reviews</a>
         <a href="#">About</a>
@@ -40,13 +39,17 @@ git status
             Search, verify and review South African businesses before spending your money.
         </p>
 
-        <button class="btn btn-primary">
-            Explore Businesses
-        </button>
+        <div class="hero-buttons">
 
-        <button class="btn btn-secondary">
-            Write Review
-        </button>
+            <a href="businesses.html" class="btn btn-primary">
+                Explore Businesses
+            </a>
+
+            <button class="btn btn-secondary">
+                Write Review
+            </button>
+
+        </div>
 
     </div>
 
@@ -78,10 +81,6 @@ git status
             placeholder="Search businesses..."
             onkeyup="searchBusinesses()">
 
-        <button onclick="searchBusinesses()">
-            Search
-        </button>
-
         <div id="searchResults"></div>
 
     </div>
@@ -94,7 +93,8 @@ git status
         Featured Businesses
     </h2>
 
-    <div id="results"></div>
+    <!-- Homepage will show 5 businesses here -->
+    <div id="featuredBusinesses"></div>
 
 </section>
 
@@ -106,4 +106,3 @@ git status
 
 </body>
 </html>
-```
