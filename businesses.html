@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Businesses - BusinessCheck SA</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        Business<span>Check</span> SA
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="businesses.html">Businesses</a>
+        <a href="#">Reviews</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="page-header">
+    <h1>All Businesses</h1>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search businesses..."
+        onkeyup="searchBusinesses()">
+</section>
+
+<section class="businesses">
+
+    <div id="results"></div>
+
+    <div id="pagination"></div>
+
+</section>
+
+<script src="js/businesses.js"></script>
+
+</body>
+</html>
