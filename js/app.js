@@ -3,14 +3,40 @@ let businesses = [];
 const apiUrl =
 "https://businesschecksa-api-ebfyg0gvd3h9dyc0.southafricanorth-01.azurewebsites.net/api/GetBusinesses";
 
-window.onload = async () => {
+function renderFeaturedBusinesses() {
 
-    const response = await fetch(apiUrl);
+    const featuredBusinesses =
+        businesses.slice(0, 5);
 
-    businesses = await response.json();
+    document.getElementById("results").innerHTML =
+        featuredBusinesses.map(b => `
 
-    renderBusinesses(businesses);
-};
+            <div class="business-card">
+
+                <h3>${b.Name}</h3>
+
+                <p>
+                    <strong>Category:</strong>
+                    ${b.Category}
+                </p>
+
+                <p>
+                    <strong>City:</strong>
+                    ${b.City}
+                </p>
+
+                <p>
+                    ${b.Description}
+                </p>
+
+                <a href="business.html?id=${b.Id}">
+                    View Business
+                </a>
+
+            </div>
+
+        `).join('');
+}
 
 function renderBusinesses(data){
 
