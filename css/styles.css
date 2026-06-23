@@ -392,3 +392,32 @@ footer{
     font-weight: bold;
     text-decoration: none;
 }
+#featuredBusinesses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.business-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+}
+
+.business-card h3 {
+    color: #1e40af;
+    margin-bottom: 15px;
+}
+
+.business-card a {
+    color: #f97316;
+    font-weight: 600;
+    text-decoration: none;
+}
