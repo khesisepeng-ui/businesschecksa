@@ -394,30 +394,24 @@ footer{
 }
 #featuredBusinesses {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
     margin-top: 30px;
 }
-
-.business-card {
-    background: white;
-    border-radius: 15px;
-    padding: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease;
+@media (max-width: 1200px) {
+    #featuredBusinesses {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-.business-card:hover {
-    transform: translateY(-5px);
+@media (max-width: 768px) {
+    #featuredBusinesses {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.business-card h3 {
-    color: #1e40af;
-    margin-bottom: 15px;
-}
-
-.business-card a {
-    color: #f97316;
-    font-weight: 600;
-    text-decoration: none;
+@media (max-width: 480px) {
+    #featuredBusinesses {
+        grid-template-columns: 1fr;
+    }
 }
