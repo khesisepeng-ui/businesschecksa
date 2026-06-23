@@ -52,8 +52,8 @@ function renderFeaturedBusinesses() {
                 </p>
 
                 <a href="business.html?id=${b.Id}">
-                    View Business
-                </a>
+    View Reviews
+</a>
 
             </div>
 
