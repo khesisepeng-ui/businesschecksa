@@ -99,3 +99,26 @@ function selectBusiness(id){
 
     document.getElementById("searchInput").value = business.Name;
 }
+function renderFeaturedBusinesses() {
+
+    const featured = businesses.slice(0, 5);
+
+    document.getElementById("featuredBusinesses").innerHTML =
+        featured.map(b => `
+
+            <div class="featured-card">
+
+                <h3>${b.Name}</h3>
+
+                <p>${b.Category}</p>
+
+                <p>${b.City}</p>
+
+                <a href="business.html?id=${b.Id}">
+                    View Business
+                </a>
+
+            </div>
+
+        `).join('');
+}

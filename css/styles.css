@@ -359,3 +359,36 @@ footer{
     background:#ff9a3d;
 }
 
+.featured-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.featured-section h2 {
+    color: #1e40af;
+    margin-bottom: 30px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.featured-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.featured-card h3 {
+    color: #1e40af;
+    margin-bottom: 10px;
+}
+
+.featured-card a {
+    color: #f97316;
+    font-weight: bold;
+    text-decoration: none;
+}
