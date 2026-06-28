@@ -4,7 +4,7 @@ const apiUrl =
 let businesses = [];
 let filteredBusinesses = [];
 let currentPage = 1;
-const pageSize = 30;
+const pageSize = 5;
 
 window.onload = async () => {
 
